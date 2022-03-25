@@ -64,4 +64,6 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable liquidsoap-painel
 sudo systemctl restart icecast2
+sudo systemctl restart apache2
+sudo systemctl restart liquidsoap-painel
 exit 0
