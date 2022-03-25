@@ -1,0 +1,13 @@
+[Unit]
+Description=Servico para o painel para o Icecast
+After=network.target
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=liquidsoap
+Group=liquidsoap
+ExecStart=/usr/local/bin/liquidsoap-painel-init.sh
+
+[Install]
+WantedBy=multi-user.target
